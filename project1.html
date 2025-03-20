@@ -1,0 +1,263 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .header{
+        grid-area: header;
+        background-color: rgb(18, 126, 235);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 13px;
+        display: grid;
+        grid-template-columns: 200px 1fr 500px;
+          
+        border-radius: 20px;
+        
+    }
+    .aside{
+        grid-area: aside;
+        background-color: rgb(191, 128, 233);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;   
+    }
+    .main{
+        grid-area:main;
+        background-color: rgb(168, 191, 218);
+        color: white;
+        text-align: center;
+        padding: 10px;
+        font-size: 50px;
+    }
+    .footer{
+        grid-area:footer;
+        background-color: rgb(113, 218, 160);
+        color: white;
+        text-align: left;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .grid-container{
+        display: grid;
+        grid-template-areas: "header header" "aside main" "footer footer";
+        grid-template-rows: 130px 1fr auto;
+        grid-template-columns: 200px 1fr;
+        height: 100vh;
+        gap: 8px;
+    }
+    .cart {
+        width: fit-content;
+        border: 2px solid  rgba(251, 252, 253, 0.918);
+        background-color: 5px rgba(255, 255, 255, 0.902);
+        padding: 4px;
+         margin: 15px;
+          text-align: center;
+          border-radius: 5px;
+          box-shadow: 0px 4px 8px rgb(41, 40, 40);
+          font-size: 5px;
+           color: black;
+    }
+    .cart h2{
+ font-weight: bold;
+ font-style: normal;
+    }
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        justify-content: center;
+        margin: 2px;
+        padding: 10px;
+        background-color: rgba(247, 243, 245, 0.932);
+    }
+    .cart:hover{
+        transform: scale(1.05);
+        box-shadow: 0px 8px 16px hsla(150, 2%, 21%, 0.893);
+    }
+     
+    .m:hover{
+        background-color: green;
+        border: white;
+        border-radius: 1px;
+        box-shadow: rgb(233, 196, 196);
+        cursor: pointer;
+        transform: scale(1.05);
+    }
+    .m{
+        background-color: white;
+        border-color: azure;
+          color: rgb(94, 231, 89);
+    }
+    .dil{
+        text-decoration: none;
+        word-spacing: 30px;
+        margin-top: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        color: aliceblue;
+    }
+    .dill:hover{
+        transform: scale(1.09);
+        background-color: rgb(145, 135, 135);
+         
+    }
+     .dill{
+        text-decoration: none;
+        color: white;
+        
+        
+     }
+    .d{
+        margin-top:20px ;
+    }
+    .input{
+        text-align: right;
+        
+         
+    }
+    .aside{
+        grid-area: aside;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    @keyframes scrollsidebar{
+        0%{
+            transform: translateY(0);
+        }
+        100%{
+            transform: translateY(-100%);
+        }    
+        }
+        .sidebar-content{
+            animation: scrollsidebar 10s ease-in 2s infinite  alternate;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+     
+</style>
+ </head>
+ <body>
+    <div class="grid-container">
+    <header class="header">
+        <img class="d" src="logo.jfif" width="60px" height="60px">
+        <h1>Food Court <br> <small>(Hot and Fresh food)</small></h1>
+         
+        <nav class="dil">
+
+            <a class="dill" href="first.html">Home</a>
+            <a class="dill" href="veg.html">Veg</a>
+            <a class="dill" href="first.html">Non-Veg</a>
+            <a class="dill" href="myorders.html">Orders</a>
+        </nav>
+        <input class="input" type="search" id="name" name="name" placeholder="search items">
+    </header>
+    <aside class="aside">
+        <div class="sidebar-content">
+            <img src="rosted chicken.jfif" width="180px" height="180px">
+            <img src="spicy thai noodles.jfif" width="180px" height="180px">
+            <img src="fish fry masala.jfif" width="180px" height="180px">
+            <img src="cake.jpg"  width="180px" height="180px">
+            <img src="german.webp"  width="180px" height="180px">
+        </div>
+       
+    </aside>
+     <main class="main">
+        <div class="container">
+            <div class="cart">
+            <img src="fish fry masala.jfif" width="200" height="200">
+            <h2>Fish Fry Masala</h2>
+            <h3>Price : <span style="color: red;">&#x20B9;350/-</span></h3>
+            
+            <p> Free editing. High-quality stock<br> images at low prices. Discover <br>stock images, clip art, and illustrations<br> that speak to your creative soul.</p>
+             <button class="m">Order</button>
+            </div>
+            <div class="cart">
+                <img src="amritsari fish fry.jfif" width="200" height="200">
+                <h2>Ameitsari Fish Fry</h2>
+                <h3>Price : <span style="color: red;">&#x20B9;256/-</span></h3>
+                
+                <p> Free editing. High-quality stock<br> images at low prices. Discover <br>stock images, clip art, and illustrations<br> that speak to your creative soul.</p>
+                <button class="m">Order</button>
+            </div>
+                <div class="cart">
+                    <img src="kerala fish fry.jfif" width="200" height="200">
+                    <h2>Kerala Fish Fry</h2>
+                    <h3>Price : <span style="color: red;">&#x20B9;299/-</span></h3>
+                    
+                    <p> Free editing. High-quality stock<br> images at low prices. Discover <br>stock images, clip art, and illustrations<br> that speak to your creative soul.</p>
+                    <button class="m">Order</button>
+                </div>
+                    <div class="cart">
+                        <img src="fried chicken.jfif" width="200" height="200">
+                        <h2>Fried chicken</h2>
+                        <h3>Price : <span style="color: red;">&#x20B9;320/-</span></h3>
+                        
+                        <p> Free editing. High-quality stock<br> images at low prices. Discover <br>stock images, clip art, and illustrations<br> that speak to your creative soul.</p>
+                        <button class="m">Order</button>
+                    </div>
+                        <div class="cart">
+                            <img src="rosted chicken.jfif" width="200" height="200">
+                            <h2>Rosted chicken</h2>
+                            <h3>Price : <span style="color: red;">&#x20B9;360/-</span></h3>
+                            
+                            <p> Free editing. High-quality stock<br> images at low prices. Discover <br>stock images, clip art, and illustrations<br> that speak to your creative soul.</p>
+                            <button class="m">Order</button>
+                        </div>
+                            <div class="cart">
+                                <img src="spicy thai noodles.jfif" width="200" height="200">
+                                <h2>Spicy Thai Noodles</h2>
+                                <h3>Price : <span style="color: red;">&#x20B9;150/-</span></h3>
+                                
+                                <p> Free editing. High-quality stock<br> images at low prices. Discover <br>stock images, clip art, and illustrations<br> that speak to your creative soul.</p>
+                                <button class="m">Order</button>
+                            </div>
+                                <div class="cart">
+                                    <img src="pizza.jfif" width="200" height="200">
+                                    <h2>Pizza</h2>
+                                    <h3>Price : <span style="color: red;">&#x20B9;220/-</span></h3>
+                                    
+                                    <p> Free editing. High-quality stock<br> images at low prices. Discover <br>stock images, clip art, and illustrations<br> that speak to your creative soul.</p>
+                                    <button class="m">Order</button>
+                                </div>
+                                    <div class="cart">
+                                        <img src="bargur.jfif" width="200" height="200">
+                                        <h2>Burger</h2>
+                                        <h3>Price : <span style="color: red;">&#x20B9;110/-</span></h3>
+                                        
+                                        <p> Free editing. High-quality stock<br> images at low prices. Discover <br>stock images, clip art, and illustrations<br> that speak to your creative soul.</p>
+                                        <button class="m">Order</button>
+                                    </div>
+                                        <div class="cart">
+                                            <img src="fruites.jfif" width="200" height="200">
+                                            <h2>Fruites</h2>
+                                            <h3>Price : <span style="color: red;">&#x20B9;210/-</span></h3>
+                                            
+                                            <p> Free editing. High-quality stock<br> images at low prices. Discover <br>stock images, clip art, and illustrations<br> that speak to your creative soul.</p>
+                                            <button class="m">Order</button>
+                                        </div>
+                                        </div> 
+         
+       
+     </main>
+     <footer class="footer">
+        <p>food court is started in 2024.....</p>
+        <h3>Follow Us on Social Media:</h3>
+        <span style="color: rgb(240, 16, 53);"><i class="fa-brands fa-instagram"></i></span>
+        <span style="color:green;">  <i class="fa-brands fa-whatsapp"></i></span> 
+        <span style="color:blue">  <i class="fa-brands fa-facebook"></i></span>
+        <span style="color:rgb(20, 157, 211);"> <i class="fa-brands fa-twitter"></i></span>
+     </footer>
+    </div>
+ </body>
+ </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-container{
+            display: grid;
+            grid-template-areas: "header" "main" "footer";
+            grid-template-rows: auto 1fr auto;
+            height: 100vh;
+
+        }
+        .header{
+             display: grid;
+             grid-template-columns: auto 1fr auto;
+             background-color:  rgb(8, 6, 6);
+             color: white;
+             text-align: center;
+             padding: 10px;
+             font-size: 25px;
+        }
+        .navi{
+            text-decoration: none;
+            word-spacing: 30px;
+            margin-top: 70px;
+            color: rgb(227, 163, 46);
+            font-weight: bold;
+        }
+        .navi:hover{
+            background-color: rgb(208, 216, 210);
+
+        }
+        .nava{
+            margin-top: 80px;
+            word-spacing: 25px;
+            font-weight: bold;
+        }
+        .search-bar{
+            margin-top: 80px;
+            border: black 2px;
+        }
+        .logo{
+            font-style: initial;
+            font-weight: bolder;
+            font-size: 30px;
+        }
+        .footer{
+        grid-area:footer;
+        background-color: rgb(113, 218, 160);
+        color: white;
+        text-align: left;
+        padding: 10px;
+        font-size: 20px;
+    }
+
+    iframe{
+        padding: 1px;
+        height: 70vh;
+        width: 190vh;
+        margin: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <header class="header"> 
+            <div class="logo">
+                <h1>Food.</h1>
+            </div>
+            <nav class="nava" >
+                <a class="navi" href="recepes.html "  >Recepes</a>
+                <a class="navi" href="popular.html">Popular</a>
+                <a class="navi" href="meat&seefood.html"> Meat&SeeFood</a>
+                <a class="navi" href="healthy&diet.html">Healthy&Diet</a>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="search Items">
+                <button value="search">search </button>
+            </div>
+        </header>
+             
+        <main class="main ">
+              
+             <img src="wall.webp" width="1250px" height="900px"> </main>
+            
+        <footer class="footer">
+            <p>Looking to spice up your morning? From pumpkin pancakes to sausage waffles, check out these inspired recipes that'll take the boring out of breakfast in no time flat.</p>
+        <h3>Follow Us on Social Media:</h3>
+        <span style="color: rgb(240, 16, 53);"><i class="fa-brands fa-instagram"></i></span>
+        <span style="color:green;">  <i class="fa-brands fa-whatsapp"></i></span> 
+        <span style="color:blue">  <i class="fa-brands fa-facebook"></i></span>
+        <span style="color:rgb(20, 157, 211);"> <i class="fa-brands fa-twitter"></i></span>
+        </footer>
+    </div>
+</body>
+</html>
