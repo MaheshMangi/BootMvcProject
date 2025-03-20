@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More - SEVAS Systems</title>
+    <style>
+        /* Resetting margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f4f8;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(45deg, #005f73, #d5006b);
+            padding: 20px 0;
+            text-align: center;
+            color: white;
+        }
+
+        header nav ul {
+            list-style: none;
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        footer {
+            background-color: #005f73;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .learn-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .learn-container h1 {
+            color: #005f73;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .learn-container p {
+            color: #555;
+            font-size: 18px;
+            line-height: 1.8;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .learn-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #d5006b;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card h2 {
+            color: #005f73;
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            color: #777;
+            font-size: 16px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card:hover img {
+            filter: brightness(1.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .learn-cards {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="learn.html">Learn</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="learn-container">
+        <h1>Learn More About SEVAS Systems</h1>
+        <p>Explore the various technologies and innovative features that power SEVAS Systems. Discover how we use cutting-edge tech to make vehicle management smarter and more efficient.</p>
+
+        <div class="learn-cards">
+
+            <!-- Card 1: GPS and IoT Integration -->
+            <div class="card">
+                <img src="https://via.placeholder.com/400x200/005f73/ffffff?text=GPS+%26+IoT+Integration" alt="GPS and IoT Integration">
+                <div class="card-content">
+                    <h2>GPS & IoT Integration</h2>
+                    <p>Learn how we integrate GPS and IoT for real-time vehicle tracking, enabling smarter and more efficient fleet management.</p>
+                </div>
+            </div>
+
+            <!-- Card 2: Automated Maintenance -->
+            <div class="card">
+                <img src="https://via.placeholder.com/400x200/9c27b0/ffffff?text=Automated+Maintenance" alt="Automated Maintenance">
+                <div class="card-content">
+                    <h2>Automated Maintenance</h2>
+                    <p>Our automated maintenance system ensures that your vehicles are always in top condition, reducing downtime and repair costs.</p>
+                </div>
+            </div>
+
+            <!-- Card 3: Data Security -->
+            <div class="card">
+                <img src="https://via.placeholder.com/400x200/8e24aa/ffffff?text=Data+Security" alt="Data Security">
+                <div class="card-content">
+                    <h2>Data Security</h2>
+                    <p>SEVAS uses advanced encryption and security protocols to protect all vehicle and user data, ensuring your fleet stays safe.</p>
+                </div>
+            </div>
+
+            <!-- Card 4: Smart Alerts -->
+            <div class="card">
+                <img src="fish fry masala.jfif" alt="Smart Alerts">
+                <div class="card-content">
+                    <h2>Smart Alerts</h2>
+                    <p>With real-time smart alerts, SEVAS ensures you are always in control of your fleet’s performance and security.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SEVAS Systems. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
